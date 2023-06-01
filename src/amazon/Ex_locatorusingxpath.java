@@ -37,9 +37,9 @@ public class Ex_locatorusingxpath {
       	Thread.sleep(2000);
       		
       		
-      //click on solve puzzle
-      	driver.findElement(By.xpath("//button[contains(text(),'Solve')]")).click();
-      	Thread.sleep(2000);
+//      //click on solve puzzle
+//      	driver.findElement(By.xpath("//button[contains(text(),'Solve')]")).click();
+//      	Thread.sleep(2000);
 	}
 
 }
