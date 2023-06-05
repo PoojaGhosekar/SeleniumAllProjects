@@ -15,6 +15,7 @@ public class AZSignINTest {
 		createacc.createAcc();
 		AZRegistrationPage register=new AZRegistrationPage(driver);
 		register.registerAccount();
+		driver.close();
 	}
 
 }
