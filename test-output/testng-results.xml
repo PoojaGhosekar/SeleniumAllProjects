@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[running TC1 test case]]>
+    </line>
+    <line>
+      <![CDATA[running TC2 test case]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-06-05T22:01:25 CEST" name="Default suite" finished-at="2023-06-05T22:01:25 CEST" duration-ms="78">
+    <groups>
+    </groups>
+    <test started-at="2023-06-05T22:01:25 CEST" name="Default test" finished-at="2023-06-05T22:01:25 CEST" duration-ms="78">
+      <class name="TestNG.Ex_EmailableReport">
+        <test-method signature="TC1()[pri:0, instance:TestNG.Ex_EmailableReport@29d89d5d]" started-at="2023-06-05T22:01:25 CEST" name="TC1" finished-at="2023-06-05T22:01:25 CEST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[running TC1 test case]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method signature="TC2()[pri:0, instance:TestNG.Ex_EmailableReport@29d89d5d]" started-at="2023-06-05T22:01:25 CEST" name="TC2" finished-at="2023-06-05T22:01:25 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[running TC2 test case]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC2 -->
+      </class> <!-- TestNG.Ex_EmailableReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
