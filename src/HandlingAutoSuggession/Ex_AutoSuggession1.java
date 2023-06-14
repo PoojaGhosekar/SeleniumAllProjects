@@ -16,7 +16,7 @@ public class Ex_AutoSuggession1 {
 		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("selenium");
 		Thread.sleep(2000);
 		List<WebElement> allOptins = driver.findElements(By.xpath("//div[@class='two-pane-results-container']/div/div"));
-		String expText="selenium shampoo";
+		String expText="selenium sulfide shampoo";
 		for(WebElement s1:allOptins)
 		{
 			String actText=s1.getText();

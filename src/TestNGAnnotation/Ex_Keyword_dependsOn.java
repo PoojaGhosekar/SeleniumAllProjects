@@ -1,0 +1,26 @@
+package TestNGAnnotation;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class Ex_Keyword_dependsOn {
+	@Test
+	public void login1() 
+	{
+		Reporter.log("--running login1 TC--",true);
+	}
+	
+	@Test
+	public void login2() 
+	{
+		Reporter.log("--running login2 TC--",true);
+	}
+	
+	
+	@Test(dependsOnMethods = "login1")
+	public void logout() 
+	{
+		Reporter.log("--running logout TC--",true);
+	}
+
+}

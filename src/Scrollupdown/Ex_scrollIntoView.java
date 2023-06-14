@@ -12,10 +12,10 @@ public class Ex_scrollIntoView {
 	driver.get("https://www.amazon.in/");
 	driver.manage().window().maximize();
 	WebElement instagram = driver.findElement(By.xpath("//a[text()='Instagram']"));
-	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);",instagram);
+	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(false);",instagram);
 	Thread.sleep(2000);
-	WebElement mobiletab = driver.findElement(By.xpath("//a[text()='Mobiles']"));
-	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", mobiletab);
+//	WebElement mobiletab = driver.findElement(By.xpath("//a[text()='Mobiles']"));
+//	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(false);", mobiletab);
 	//a[text()='Mobiles']
 	//((JavascriptExecutor)driver).executeScript("window.scrollBy(0,-200)");
 

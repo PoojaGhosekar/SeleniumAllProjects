@@ -31,6 +31,7 @@ public static void main(String[] args) throws InterruptedException {
 	act.sendKeys(Keys.END).perform();
 	Thread.sleep(1000);
 	act.sendKeys(Keys.ENTER).perform();
+	String monthvalue = month.getAttribute("value");
 	//day
 	act.click(day).perform();
 	
@@ -41,6 +42,7 @@ public static void main(String[] args) throws InterruptedException {
 		Thread.sleep(1000);
 	}
 	act.sendKeys(Keys.ENTER).perform();
+	String dayvalue = day.getAttribute("value");
 	//year
 	act.click(year).perform();
 	for(int j=1;j<=8;j++)
@@ -49,8 +51,8 @@ public static void main(String[] args) throws InterruptedException {
 		Thread.sleep(1000);
 	}
 	act.sendKeys(Keys.ENTER).perform();
-	
-	
+	String yearvalue = year.getAttribute("value");
+	System.out.println("Hridhan Birthdate is : "+dayvalue+"/"+monthvalue+"/"+yearvalue);
 }
 
 }

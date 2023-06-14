@@ -20,6 +20,9 @@ public class Ex_NestedIFrame {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='Iframe Example']")));
 		String text2 = driver.findElement(By.xpath("//h1[text()='This page is displayed in an iframe']")).getText();
 		System.out.println(text2);
+		driver.switchTo().parentFrame();
+		String text3 = driver.findElement(By.xpath("//p[contains(text(),'You can use the height and width')]")).getText();
+		System.out.println(text3);
 	}
 
 }

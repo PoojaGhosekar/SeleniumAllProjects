@@ -11,6 +11,7 @@ public class Ex_AutoSuggessionInFlipkart {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
+		driver.manage().window().maximize();
 		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("selenium");
