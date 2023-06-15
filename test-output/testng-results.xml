@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Tc2 running]]>
     </line>
+    <line>
+      <![CDATA[Tc3 running]]>
+    </line>
+    <line>
+      <![CDATA[Tc4 running]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-06-14T12:32:18 CEST" name="Default suite" finished-at="2023-06-14T12:32:18 CEST" duration-ms="59">
+  <suite started-at="2023-06-15T10:00:29 CEST" name="Suite" finished-at="2023-06-15T10:00:29 CEST" duration-ms="77">
     <groups>
     </groups>
-    <test started-at="2023-06-14T12:32:18 CEST" name="Default test" finished-at="2023-06-14T12:32:18 CEST" duration-ms="59">
-      <class name="TestNGAnnotation.Ex_keywordCombination">
-        <test-method signature="Tc2()[pri:0, instance:TestNGAnnotation.Ex_keywordCombination@29d89d5d]" started-at="2023-06-14T12:32:18 CEST" name="Tc2" finished-at="2023-06-14T12:32:18 CEST" duration-ms="10" status="PASS">
+    <test started-at="2023-06-15T10:00:29 CEST" name="Test" finished-at="2023-06-15T10:00:29 CEST" duration-ms="77">
+      <class name="DisableTestCases.Ex_Disabletestcases2">
+        <test-method signature="Tc2()[pri:0, instance:DisableTestCases.Ex_Disabletestcases2@212b5695]" started-at="2023-06-15T10:00:29 CEST" name="Tc2" finished-at="2023-06-15T10:00:29 CEST" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Tc2 running]]>
             </line>
           </reporter-output>
         </test-method> <!-- Tc2 -->
-      </class> <!-- TestNGAnnotation.Ex_keywordCombination -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="Tc3()[pri:0, instance:DisableTestCases.Ex_Disabletestcases2@212b5695]" started-at="2023-06-15T10:00:29 CEST" name="Tc3" finished-at="2023-06-15T10:00:29 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc3 running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tc3 -->
+        <test-method signature="Tc4()[pri:0, instance:DisableTestCases.Ex_Disabletestcases2@212b5695]" started-at="2023-06-15T10:00:29 CEST" name="Tc4" finished-at="2023-06-15T10:00:29 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc4 running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tc4 -->
+      </class> <!-- DisableTestCases.Ex_Disabletestcases2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

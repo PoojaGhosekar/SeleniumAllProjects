@@ -17,7 +17,7 @@ public class Ex_Keyword_dependsOn {
 	}
 	
 	
-	@Test(dependsOnMethods = "login1")
+	@Test(dependsOnMethods = {"login1","login2"})
 	public void logout() 
 	{
 		Reporter.log("--running logout TC--",true);
