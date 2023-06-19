@@ -10,7 +10,7 @@ public class Ex_setSize {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 				
-		Dimension d=new Dimension(200, 300);
+		Dimension d=new Dimension(700, 300);
 		driver.manage().window().setSize(d);
 		System.out.println(d);
 	}

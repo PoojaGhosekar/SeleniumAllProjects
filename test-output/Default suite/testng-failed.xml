@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DisableTestCases.Ex_DisableTestCasesUsingInclude">
+      <class name="POM_DDF_PAGEFACTORY_TestNG.PBLoginTest">
         <methods>
-          <include name="Tc2"/>
+          <include name="logoutToApp"/>
+          <include name="openBrowser"/>
+          <include name="verifyFullName"/>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- DisableTestCases.Ex_DisableTestCasesUsingInclude -->
+      </class> <!-- POM_DDF_PAGEFACTORY_TestNG.PBLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

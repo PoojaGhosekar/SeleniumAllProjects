@@ -12,10 +12,11 @@ public class Ex_LeftClick {
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		WebElement cart = driver.findElement(By.xpath("//span[text()='Cart']"));
 	    Actions act=new Actions(driver);
 	    act.moveToElement(cart).perform();
+	    Thread.sleep(5000);
 	    act.click().perform();
 	
 	}
