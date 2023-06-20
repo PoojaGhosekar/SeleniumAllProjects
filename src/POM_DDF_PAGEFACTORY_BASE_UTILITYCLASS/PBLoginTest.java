@@ -1,4 +1,4 @@
-package POM_DDF_PAGEFACTORY_TestNG;
+package POM_DDF_PAGEFACTORY_BASE_UTILITYCLASS;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class PBLoginTest {
+public class PBLoginTest extends Base_Class {
 	WebDriver driver;
 	Sheet sh;
 	PBLoginPage pbLogin;
@@ -29,14 +29,9 @@ public class PBLoginTest {
 	@BeforeClass
 	public void openBrowser() throws EncryptedDocumentException, IOException
 	{
-		FileInputStream file =new FileInputStream("C:\\pooja\\VelocitySoftwareTesting\\AUTOMATION\\Excel\\POMWithDDFTestNG.xlsx");
-		WorkbookFactory.create(file).getSheet("DDF");
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.policybazaar.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 		
+		initializeBrowser();
 		pbLogin=new PBLoginPage(driver);
 		pbMobno=new PBMobNoPage(driver);
 		pbPwd=new PBPasswordPage(driver);
@@ -45,22 +40,22 @@ public class PBLoginTest {
 		pbProfile=new PBProfilePage(driver);
 	}
 	@BeforeMethod
-	public void loginToApp() throws InterruptedException
+	public void loginToApp() throws InterruptedException, EncryptedDocumentException, IOException
 	{
 		pbLogin.clickPBLoginPageSignIn();
 		Thread.sleep(1000);
-		pbMobno.enterPBMobNoPagemobNo(sh.getRow(0).getCell(0).getStringCellValue());
+		pbMobno.enterPBMobNoPagemobNo(Utility_Class.getTestData(0, 0));
 		Thread.sleep(1000);
 		pbMobno.clickPBMobNoPAgeSignInWithPwd();
 		Thread.sleep(1000);
-		pbPwd.enterPBPasswordPagePwd(sh.getRow(0).getCell(1).getStringCellValue());
+		pbPwd.enterPBPasswordPagePwd(Utility_Class.getTestData(0, 1));
 		Thread.sleep(1000);
 		pbPwd.clickPBPasswordPageSignIn();
 		Thread.sleep(1000);
 		
 	}
 	@Test
-	public void verifyFullName() throws InterruptedException
+	public void verifyFullName() throws InterruptedException, EncryptedDocumentException, IOException
 	{
 		pbHome.openDDOptionPBHomePagemyAcc();
 		Thread.sleep(1000);
@@ -69,7 +64,7 @@ public class PBLoginTest {
 		pbProfile.switchToChildWindow();
 		Thread.sleep(1000);
 		String actTest=pbProfile.getPBProfilePageFullName();
-		String expText=sh.getRow(0).getCell(2).getStringCellValue();
+		String expText=Utility_Class.getTestData(0, 2);
 		Assert.assertEquals(actTest, expText,"Failed: Both results are different");
 		
 		
