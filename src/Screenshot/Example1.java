@@ -22,6 +22,7 @@ public class Example1 {
 		
 		FileHandler.copy(src, dest);
 		System.out.println(dest);
+		
 	}
 
 }

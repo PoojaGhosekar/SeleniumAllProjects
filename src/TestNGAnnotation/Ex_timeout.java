@@ -12,7 +12,7 @@ public class Ex_timeout {
 //	}
 	@Test(timeOut=5000)
 	public void logout() throws InterruptedException {
-		Thread.sleep(7000);
+		Thread.sleep(3000);
 		Reporter.log("TC running", true);
 	} 
 

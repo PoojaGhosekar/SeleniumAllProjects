@@ -13,8 +13,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Ex_getStringData {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
-		FileInputStream file=new FileInputStream("C:\\pooja\\VelocitySoftwareTesting\\AUTOMATION\\Excel\\auto1.xlsx");//Fetching file
-		Workbook book=WorkbookFactory.create(file);//opening a file
+	   FileInputStream file=new FileInputStream("C:\\pooja\\VelocitySoftwareTesting\\AUTOMATION\\Excel\\auto1.xlsx");//Fetching file
+	   Workbook book=WorkbookFactory.create(file);//opening a file
 	   Sheet sh=book.getSheet("Sheet1");//opening specific sheet
 	   Row row=sh.getRow(0);//particular rowindex start with 0
 	   Cell cell=row.getCell(0);//particular column/cell index start with 0

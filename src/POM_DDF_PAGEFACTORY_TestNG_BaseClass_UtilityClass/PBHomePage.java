@@ -1,4 +1,4 @@
-package POM_DDF_PAGEFACTORY_TestNG;
+package POM_DDF_PAGEFACTORY_TestNG_BaseClass_UtilityClass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,15 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PBHomePage {
 	@FindBy(xpath="//div[text()='My Account']")private WebElement myAcc;
-	WebDriver driver;
-	public PBHomePage(WebDriver driver1)
+	WebDriver driver1;
+	public PBHomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
-		driver=driver1;
+		driver1=driver;
 	}
 	public void openDDOptionPBHomePagemyAcc()
 	{
-		Actions act=new Actions(driver);
+		Actions act=new Actions(driver1);
 		act.moveToElement(myAcc).perform();
 	}
 

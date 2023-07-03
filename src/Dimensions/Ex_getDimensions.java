@@ -14,6 +14,8 @@ public class Ex_getDimensions {
 		int width = size.getWidth();
 		System.out.println(height);
 		System.out.println(width);
+		System.out.println(size);
+		driver.close();
 		
 	}
 

@@ -20,7 +20,7 @@ public class Ex_MouseRightClick {
 	Actions act=new Actions(driver);
 	act.moveToElement(rightclick).perform();
 	act.contextClick().perform();
-	
+	//act.moveToElement(rightclick).contextClick().perform();
 	//act.moveToElement(rightclick).contextClick().perform();
 	
 	//act.contextClick(rightclick).perform();

@@ -1,4 +1,4 @@
-package POM_DDF_PAGEFACTORY_BASE_UTILITYCLASS;
+package POM_DDF_PAGEFACTORY_TestNG_BaseClass_UtilityClass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

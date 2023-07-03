@@ -23,11 +23,14 @@ public class Ex_GetFirstSelectedOptionFromSingleSelectable {
 			Select s=new Select(month);
 			//step 3
 			//s.selectByIndex(8);
-			//Thread.sleep(2000);
+			//
 			s.selectByIndex(10);
 			WebElement options=s.getFirstSelectedOption();
 			String text=options.getText();
 			System.out.println(text);
+			Thread.sleep(2000);
+			s.selectByIndex(11);
+			
 			
 	}
 
